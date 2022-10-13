@@ -45,4 +45,28 @@ client.on('messageCreate', (message) => {
     }
 })
 
+client.on('messageCreate', (message) => {
+    if (message.content === '!farewell') {
+        message.reply({
+            content: 'Good Bye!',
+        })
+    }
+})
+
+client.on('messageCreate', (message) => {
+    if (message.content === '!fun_fact') {
+        message.reply({
+            content: 'You can\'t count your hair!',
+        })
+    }
+})
+
+client.on('messageCreate', (message) => {
+    if (message.content === '!fact') {
+        message.reply({
+            content: 'The more you spend on others, the happier you are!',
+        })
+    }
+})
+
 client.login(process.env.TOKEN)
